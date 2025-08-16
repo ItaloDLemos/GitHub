@@ -14,30 +14,17 @@ while (produto <= qtdTotalProdutos) {
     totalCompra += valorProduto
 
     console.log(`O sub-total da compra é ${totalCompra}. Foram lidos ${produto} produtos de ${qtdTotalProdutos}`)
+    alert(`O sub-total da compra é ${totalCompra}. Foram lidos ${produto} produtos de ${qtdTotalProdutos}`)
     produto++
 }
 
 console.log(`O valor total da compra foi ${totalCompra}`)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+alert(`O valor total da compra foi ${totalCompra}`)
 
 // let produto = Number(prompt('Digite a quantidade de produtos'))
 // // acumulador
 // let totalCompra = 0
 // // Numero max de repetições
-
 
 // //totalCompra = valorProduto + totalCompra 
 // while (produto > 0) {

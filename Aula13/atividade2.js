@@ -1,5 +1,5 @@
 // você foi contratado para desenvolver o chatbot da Digital College
-// você deve dar a opção do usuário de escolher entre as seguintes opções de curso, para receber o contato da coordenação:
+// você deve dar a opção do usuário de escolher entre as seguintes opções de curso para receber o contato da coordenação:
 // 1 - desenvolvimento full stack 
 // 2 - marketing digital
 // 3 - analise de dados

@@ -35,3 +35,21 @@ if(numero2%2 == 0 || numero2%5 == 0){
 else{
     console.log('Não é divisível por 2 ou 5')
 }
+
+// Atividade 1
+
+function verificarAluguel() {
+  const idade = parseInt(prompt("Digite sua idade:"));
+  const habilitado = prompt("Você é habilitado? \n1 - sim\n2 - não");
+  console.log(idade, habilitado);
+
+  if (idade >= 18 && habilitado === "1") {
+    alert("✅ O carro pode ser alugado.");
+    console.log("✅ O carro pode ser alugado.");
+  } else (idade < 18 || habilitado !== "2") {
+    alert("❌ O carro não pode ser alugado.");
+    console.log("❌ O carro não pode ser alugado.");
+  }
+}
+
+verificarAluguel();

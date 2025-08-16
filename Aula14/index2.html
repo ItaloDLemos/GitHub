@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Consulta de Coordenação</title>
+</head>
+<body>
+  <h2>Consulta de Coordenação</h2>
+  <label for="curso">Digite o curso:</label>
+  <input type="text" id="curso" placeholder="Ex: DFS, ADS, MD">
+  <button onclick="consultarCoordenacao()">Consultar</button>
+
+  <p id="resultado"></p>
+
+  <script>
+    function consultarCoordenacao() {
+      const curso = document.getElementById("curso").value.trim();
+      let mensagem = "";
+      console.log(curso);
+
+      switch (curso.toUpperCase()) {
+        case "DFS":
+          mensagem = "Coordenação: (11) 99999-1111 - Coordenador: João Silva";
+          break;
+        case "ADS":
+          mensagem = "Coordenação: (11) 99999-2222 - Coordenador: Maria Oliveira";
+          break;
+        case "MD":
+          mensagem = "Coordenação: (11) 99999-3333 - Coordenador: Pedro Santos";
+          break;
+        default:
+          mensagem = "Setor de Vendas: (11) 99999-0000 - Responsável: Ana Costa";
+      }
+
+      document.getElementById("resultado").innerText = mensagem;
+    }
+  </script>
+</body>
+</html>

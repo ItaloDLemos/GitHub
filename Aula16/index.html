@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         pre {
+        background-color: black;
+        color: azure;
+        display: flex;
+
+        align-items: center;
+        border-radius: 10px;
+        flex-wrap: wrap;
+        padding: 10px;
+        overflow-x: auto; /* Para garantir scroll horizontal se precisar */
+    }
+    code {
+        display: block;
+        white-space: pre-wrap; 
+        word-break: break-word;
+    }
+    </style>
+</head>
+<body>
+
+    <h1>Laços de Repetição - For</h1>
+
+    <ol>
+    <li>Imprima todos os números (de forma decrescente) de 10 a 1, usando o loop for
+        <pre>
+        <code >
+            for(let i = 10; i<=1; i--){
+                console.log(i)
+            }
+        </code>
+        </pre>
+    </li>       
+    <li>
+        Peça ao usuário um número de produtos que serão passados na compra. Faça um loop for para pedir todos os valores dos produtos e some para mostrar ao usuário o total da compra. 
+        <pre>
+        <code >
+            let qtdTotalProdutos = Number(prompt('Digite a quantidade de produtos'))
+            let totalCompra = 0
+            for(let produto = 1; produto <= qtdTotalProdutos; produto++){
+                let valorProduto = Number(prompt(`Digite o valor do produto ${produto}`))
+                totalCompra += valorProduto
+                console.log(`O sub-total da compra é ${totalCompra}. Foram lidos ${produto} produtos de ${qtdTotalProdutos}`)
+            }
+            console.log(`O valor total da compra foi ${totalCompra}`)
+        </code>
+        </pre>
+
+    </li>
+
+    <li>
+        Uma loja deseja cadastrar 5 clientes e verificar se o faturamento da loja foi superior a loja B (faturamento = 54000). Se o faturamento atingir esse valor mostre na tela uma mensagem contendo em quanto foi superado o faturamento.
+
+        <pre>
+        <code >
+            let quantidadeClientes = 5;
+            let faturamentoLojaA = 0;
+            let faturamentoLojaB = 54000;
+
+            for (let quantidade = 1 ; quantidade <= quantidadeClientes ; quantidade++ ) {
+
+                console.log(quantidade)
+                let valor = Number(prompt("Qual o valor da venda?"))
+                faturamentoLojaA = faturamentoLojaA + valor
+            }
+           
+            console.log(`Total da venda: R$ ${faturamentoLojaA.toFixed(2)}.`);
+
+            if (faturamentoLojaA < faturamentoLojaB) {
+                console.log(`O faturamento da concorrente é: ${faturamentoLojaB.toFixed(2)}.\n O nosso faturamento foi: ${faturamentoLojaA}. Ainda não alcançamos a concorrente!`)
+            }
+            else if(faturamentoLojaA === faturamentoLojaB){
+                console.log(`O faturamento da concorrente é: ${faturamentoLojaB.toFixed(2)}.\n O nosso faturamento foi: ${faturamentoLojaA}. Nosso faturamento foi igual ao da concorrente!`)
+            }
+            else {
+                console.log(`O faturamento da concorrente é: ${faturamentoLojaB.toFixed(2)}.\n O nosso faturamento foi: ${faturamentoLojaA}. Ultrapassamos em ${faturamentoLojaA - faturamentoLojaB} a concorrente!`)
+            }
+        </code>
+        </pre>
+    </li>
+
+    <li>
+        Faça um programa que receba um número e usando laços de repetição calcule e mostre a tabuada desse número. 
+        <pre>
+            <code>
+                let inicioTabuada = 1
+                let fimTabuada = 10
+                let numero = Number(prompt('Digite um número para calcular a tabuada'))
+                for(let tabuada = inicioTabuada; tabuada <= fim; tabuada++){
+                    console.log(`${tabuada} x ${numero} = ${tabuada * numero}`)
+                }
+            </code>
+        </pre>
+
+        
+    </li>
+
+
+    </ol>
+
+    <h2>Desafios para próxima aula</h2>
+
+    <ol>
+        <li>
+            Uma loja tem uma política de descontos de acordo com o valor da compra do cliente. Os descontos começam acima dos R$500 A cada 100 reais acima dos R$500,00 o cliente ganha 1% de desconto cumulativo até 25%. Por exemplo: R$500 = 1% || R$600,00 = 2% ... etc... Faça um programa que exiba essa tabela de descontos no seguinte formato:
+            Valordacompra - porcentagem de desconto - valor final
+        </li>
+
+        <li>
+            Faça um programa que some todos os números naturais abaixo de 1000 que são múltiplos de 3 ou 5.
+        </li>
+
+        <li>
+            Escreva um programa que receba como entrada o valor do saque realizado pelo cliente
+            de um banco e retorne quantas notas de cada valor serão necessárias para atender ao
+            saque com a menor quantidade de notas possível. Serão utilizadas notas de 100, 50, 20,
+            10, 5, 2 e 1 real.
+        </li>
+    </ol>
+
+    <!-- intervalo :)
+     Voltaremos de 20:25 -->
+
+    <!-- <script src="script.js"></script>     -->
+</body>
+</html>

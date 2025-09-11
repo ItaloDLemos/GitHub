@@ -1,0 +1,13 @@
+body {
+  background: linear-gradient(135deg, #f4f7fa, #e6ebf1);
+}
+
+.card {
+  max-width: 450px;
+  margin: auto;
+  border: none;
+}
+
+#produtos input {
+  margin-bottom: 10px;
+}
